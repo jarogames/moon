@@ -1,0 +1,21 @@
+#!/bin/bash
+################# bashmagic.func #####################
+
+#####################################  automaticaly update version
+# string in master file  : search for line  VERSION=???
+function bm_update_version {
+ NEWVER=`date +%y%m.%d.%H`
+ echo AHOJ new version is $NEWVER
+ grep "VERSION=" $0
+ sed -i "s/^VERSION=.*/VERSION=$NEWVER/" $0
+ grep "VERSION=" $0
+}
+
+
+
+################################### replace source .. in master file
+function bm_export_script {
+ echo perl script needed here...
+}
+
+
