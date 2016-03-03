@@ -336,7 +336,7 @@ $s=`date -d   \@$seco +%S  -u`;chop($s);
 $day=  `date -d  \@$seco +%d  -u`;chop($day);
 $month=`date -d  \@$seco +%m  -u`;chop($month);
 $year= `date -d  \@$seco +%Y  -u`;chop($year);
-print STDERR  "... $h:$m:$s $day.$month $year utc\n";
+#print STDERR  "... $h:$m:$s $day.$month $year utc\n";
 @a=&calculate($h,$m,$s,$day,$month,$year,$londeg,$latdeg);
 
 
