@@ -26,10 +26,10 @@ CCITY[4]="catania"     ; LLAT[4]=37.501;  LLONG[4]=-15.07417;
 CCITY[5]="santatecla"  ; LLAT[5]=37.636;  LLONG[5]=-15.176;
 CCITY[6]="fumicino"    ; LLAT[6]=41.7958; LLONG[6]=-12.2752;
 CCITY[7]="pisa"        ; LLAT[7]=43.68333;LLONG[7]=-10.4;
-	
+CCITY[8]="munich"      ; LLAT[8]=48.35283;LLONG[8]=-11.782537;
 ###echo ${CITY[*]}
 
-
+#  http://www.findlatitudeandlongitude.com/?loc=munich+airport
 
 while [[ $# > 0 ]]
 do
@@ -53,7 +53,7 @@ case $key in
 	echo "------------------------------------------------"
 	echo ${CCITY[*]}
 	echo "-----------------------------------------------------"
-	echo "$0 --update_version; $0 --export; cp $0.exported ~/"
+	echo "$0 --update_version; $0 --export; cp $0.exported ~/00_central/moon"
   ;;
 
     --export) #  join all files into one script
