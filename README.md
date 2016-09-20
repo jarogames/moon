@@ -2,6 +2,7 @@
 
 ## USAGE:
 
+```
 ./moon.exported  -h
 ----------------------------------------------------
   -v|--version         ... print version
@@ -15,20 +16,21 @@
   -d|--debug           ... debug
   -az                  ... azimut
   -alt                 ... altitude
-
+```
 
 ## SCRIPTS
 -----------------------------------------------------
+```
 for (( i=0; i<200; i++ )); do t=$(( `date +%s` + $i * 600 ));echo -n `date -d @$t`" "; ./moon    -sun   -t  @$t  -l catania ; done
 for (( i=0; i<200; i++ )); do t=$(( `date +%s` + $i * 600 ));echo -n `date -d @$t`" "; ./moon      -t  @$t  -l catania ; done
-
+```
 
 
 ##PREDEFINED PLACES
 ------------------------------------------------
-prague rez mnisek vladivostok catania santatecla fumicino pisa munich
+```prague rez mnisek vladivostok catania santatecla fumicino pisa munich```
 
 ## HOWTO EXPORT with bashmagick
 -----------------------------------------------------
-./moon.exported --update_version; ./moon.exported --export; cp ./moon.exported.exported ~/00_central/moon
+```./moon.exported --update_version; ./moon.exported --export; cp ./moon.exported.exported ~/00_central/moon```
 
